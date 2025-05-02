@@ -108,6 +108,21 @@ button:hover {
   background-color: #3949ab;
 }
 
+.unregister-button {
+  height: auto;
+  background-color: pink;
+  color: darkred;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.unregister-button:hover {
+  background-color: #ffc0cb;
+}
+
 .message {
   margin-top: 20px;
   padding: 10px;
@@ -166,4 +181,8 @@ footer {
 .participants li {
   margin-bottom: 5px;
   color: #33691e;
+}
+
+.spacer {
+  height: 20px; /* Adjust height as needed */
 }
