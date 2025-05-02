@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .map(
                   (participant) => `
                     <li>${participant}
-                      <button class="unregister-button" data-activity="${name}" data-email="${participant}">Unregister</button>
+                      <button class="unregister-button" data-activity="${name}" data-email="${escapeHTML(participant)}">Unregister</button>
                     </li>
                   `.trim()
                 )
