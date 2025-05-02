@@ -31,13 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
               ${details.participants
                 .map(
                   (participant) => `
-                  <li>
-                    ${participant}
-                    <button class="unregister-button" data-activity="${name}" data-email="${participant}">
-                      Unregister
-                    </button>
-                  </li>
-                `
+                    <li>${participant}
+                      <button class="unregister-button" data-activity="${name}" data-email="${participant}">Unregister</button>
+                    </li>
+                  `.trim()
                 )
                 .join("")}
             </ul>
